@@ -18,6 +18,9 @@
 		F9827B0617FB6A0D00537294 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9827B0517FB6A0D00537294 /* Default-568h@2x.png */; };
 		F9827B0917FB6A0D00537294 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9827B0717FB6A0D00537294 /* MainStoryboard.storyboard */; };
 		F9827B0C17FB6A0D00537294 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9827B0B17FB6A0D00537294 /* ViewController.m */; };
+		F9827B1417FB6A3300537294 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = F9827B1317FB6A3300537294 /* ViewController2.m */; };
+		F9827B1617FB6C7700537294 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9827B1517FB6C7700537294 /* MessageUI.framework */; };
+		F9827B1817FB6C8100537294 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9827B1717FB6C8100537294 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		F9827B0817FB6A0D00537294 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F9827B0A17FB6A0D00537294 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F9827B0B17FB6A0D00537294 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9827B1217FB6A3300537294 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		F9827B1317FB6A3300537294 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		F9827B1517FB6C7700537294 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F9827B1717FB6C8100537294 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9827B1817FB6C8100537294 /* CoreLocation.framework in Frameworks */,
+				F9827B1617FB6C7700537294 /* MessageUI.framework in Frameworks */,
 				F9827AF017FB6A0C00537294 /* UIKit.framework in Frameworks */,
 				F9827AF217FB6A0C00537294 /* Foundation.framework in Frameworks */,
 				F9827AF417FB6A0C00537294 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,8 @@
 		F9827AEE17FB6A0C00537294 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9827B1517FB6C7700537294 /* MessageUI.framework */,
+				F9827B1717FB6C8100537294 /* CoreLocation.framework */,
 				F9827AEF17FB6A0C00537294 /* UIKit.framework */,
 				F9827AF117FB6A0C00537294 /* Foundation.framework */,
 				F9827AF317FB6A0C00537294 /* CoreGraphics.framework */,
@@ -88,6 +99,8 @@
 				F9827B0717FB6A0D00537294 /* MainStoryboard.storyboard */,
 				F9827B0A17FB6A0D00537294 /* ViewController.h */,
 				F9827B0B17FB6A0D00537294 /* ViewController.m */,
+				F9827B1217FB6A3300537294 /* ViewController2.h */,
+				F9827B1317FB6A3300537294 /* ViewController2.m */,
 				F9827AF617FB6A0D00537294 /* Supporting Files */,
 			);
 			path = NetworkConditionApp;
@@ -176,6 +189,7 @@
 				F9827AFC17FB6A0D00537294 /* main.m in Sources */,
 				F9827B0017FB6A0D00537294 /* AppDelegate.m in Sources */,
 				F9827B0C17FB6A0D00537294 /* ViewController.m in Sources */,
+				F9827B1417FB6A3300537294 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
