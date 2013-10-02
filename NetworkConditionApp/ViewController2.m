@@ -87,7 +87,7 @@
     NSString *lon=[[self longitudeVal2]text];
     // Change this
     NSArray *msgArray =[[NSArray alloc]initWithObjects:message,comments,lat,lon,nil];
-    NSString *allMessage = [msgArray componentsJoinedByString:@" -Comments: "];
+    NSString *allMessage = [msgArray componentsJoinedByString:@"\n  *"];
     [mailController setMessageBody:allMessage isHTML:NO];
     [mailController setToRecipients:emailArray];
     [mailController setSubject:@"Network Response"];
