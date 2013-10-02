@@ -35,8 +35,11 @@
 }
 
 - (IBAction)confirmLocationButton:(id)sender {
-    ViewController *vc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController2"];
+    ViewController2 *vc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController2"];
+    vc2.longitudeVal2=LongitudeVal;
+    vc2.latitudeVal2=LatitudeVal;
     [self presentViewController:vc2 animated:YES completion:nil];
+    
 }
 - (IBAction)getMyLocationButton:(id)sender {
     locationManager.delegate=self;

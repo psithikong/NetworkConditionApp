@@ -19,5 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *myComments;
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *latitudeVal2;
+@property (weak, nonatomic) IBOutlet UILabel *longitudeVal2;
+
 
 @end
