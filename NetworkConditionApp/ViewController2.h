@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *latitudeVal2;
 @property (weak, nonatomic) IBOutlet UILabel *longitudeVal2;
+@property (weak, nonatomic) IBOutlet UILabel * addressVal2;
 
 
 @end

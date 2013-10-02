@@ -38,6 +38,7 @@
     ViewController2 *vc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController2"];
     vc2.longitudeVal2=LongitudeVal;
     vc2.latitudeVal2=LatitudeVal;
+    vc2.addressVal2=addressVal;
     [self presentViewController:vc2 animated:YES completion:nil];
     
 }

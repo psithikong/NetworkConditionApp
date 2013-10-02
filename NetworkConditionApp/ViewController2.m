@@ -11,8 +11,6 @@
 
 @interface ViewController2 (){
     NSArray *arrayOfNames;
-   //NSString *latitudeVal2;
-   //NSString *longitudeVal2;
 }
 @end
 
@@ -20,7 +18,7 @@
 @synthesize displayLabel;
 @synthesize latitudeVal2;
 @synthesize longitudeVal2;
-
+@synthesize addressVal2;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -85,8 +83,8 @@
     NSString *comments =[[self myComments]text];
     NSString *lat=[[self latitudeVal2]text];
     NSString *lon=[[self longitudeVal2]text];
-    // Change this
-    NSArray *msgArray =[[NSArray alloc]initWithObjects:message,comments,lat,lon,nil];
+    NSString *address=[[self addressVal2]text];
+    NSArray *msgArray =[[NSArray alloc]initWithObjects:message,comments,lat,lon,address,nil];
     NSString *allMessage = [msgArray componentsJoinedByString:@"\n  *"];
     [mailController setMessageBody:allMessage isHTML:NO];
     [mailController setToRecipients:emailArray];
